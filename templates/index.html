@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %} Home Page {% endblock %}
+{% block content %} 
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Daniel Connell</h1>
+    <p class="lead">Cloud Engineer | Musician </p>
+    <p class="lead">d@nielcon.nl </p>
+  <img src="/static/images/daniel-connell.jpg" width="30%" height="auto" class="center">
+</div>
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Cloud Engineer <span class="text-muted">Resume</span></h2>
+      <p class="lead">Check out my most up to date <a href="https://drive.google.com/file/d/1-EHHNrxZyOnNFp5wKiHrw6MHuxWkf2Xb/view?usp=sharing" target="_blank">resume</a> detailing my experience, skills, certifications and education.
+        You can also browse my <a href="https://www.linkedin.com/in/daniel-c-2a738641/" target="_blank">Linkedin </a> and <a href ="https://github.com/connelldan?tab=repositories" target="_blank"> Github</a> projects. 
+        My projects in Github contain the source code for this website -- which is a Python Flask app deployed to GCP's Cloud Run with all of the infrastructure being created in Terraform.
+
+      </p>
+    </div>
+    <div class="col-md-5">
+      <a href="https://drive.google.com/file/d/18AS5sUvyxup7aI-7mB_JwSRS-t5Kt9hf/view?usp=sharing" target="_blank" >
+      <img src="/static/images/daniel-connell-resume.png" width="300" height="auto" >
+    </a>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Musician <span class="text-muted">and recording hobbyist.</span></h2>
+      <p class="lead">I have played music most of my life. I have recorded my own songs and have helped friends with their music. You can review serveral projects I've worked on <a href="/music">here.</a></p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <a href="/music" >
+      <img src="/static/images/daniel-connell-guitar.jpg" height="300" width="auto" >
+      </a>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Song Help<span class="text-muted"> is a simple web app.</span></h2>
+      <p class="lead">I created a lightweight flask app and API. This can be used to help songwriters finish songs to explore different chordal options. The class is an example of western (diatonic) music being expressed in python.</p>
+    </div>
+    <div class="col-md-5">
+      <a href="https://github.com/connelldan/music" >
+      <img src="/static/images/circle-of-fifths.png" height="300" width="auto" >
+    </a>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+{% endblock %}

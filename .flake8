@@ -1,0 +1,2 @@
+[flake8]
+make-line-length = 120
